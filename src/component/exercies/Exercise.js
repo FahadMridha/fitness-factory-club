@@ -2,8 +2,7 @@ import React from 'react';
 
 const Exercise = (props) => {
     // console.log(props);
-    const{id,name,img,body,time}=props.name
-    console.log(id);
+    const{name,img,body,time}=props.exercise
     return (
         <div>
             <div>
@@ -16,7 +15,7 @@ const Exercise = (props) => {
                     <p className='text-gray-400'>{body}</p>
                     <p><small>Time required :{time}s</small></p>
                 <div className="card-actions">
-                    <button className="btn btn-primary">Add To List</button>
+                    <button className="btn btn-primary px-10">Add To List</button>
                 </div>
                 </div>
             </div>

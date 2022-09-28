@@ -10,6 +10,10 @@ const Home = () => {
         .then(res=>res.json())
         .then(data=>setExercises(data))
     },[])
+    const handlerAddToExercises=()=>{
+
+
+    }
     return (
         <div>
             <div className = 'grid grid-cols-4 gap-4' >
@@ -21,7 +25,8 @@ const Home = () => {
                     <h3 className='text-2xl font-semibold text-amber-500'>Select your today’s exercise</h3>
                     <div className = 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3' >
                         {
-                            exercises?.map(exercise =><Exercise key={exercise.id} name={exercise}/>)
+                            exercises?.map(exercise =><Exercise key={exercise.id} exercise={exercise} 
+                            handlerAddToExercises={handlerAddToExercises}/>)
 
                         }
                     </div>
