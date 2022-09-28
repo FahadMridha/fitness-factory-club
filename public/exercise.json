@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "name": "Push Down",
+    "time": 30,
+    "img": "https://thumbs.dreamstime.com/b/woman-arms-workout-gym-triceps-pushdown-exercise-woman-arms-workout-gym-triceps-pushdown-exercise-178413639.jpg",
+    "body":"Lacking motivation to get back into the gym? Back in the gym already but feel stagnated? Or maybe you're just looking for new inspiration for a the new year."
+    
+  },
+  {
+    "id": "2",
+    "name": "Shoulder Press",
+    "time": 30,
+    "img": "https://www.mensjournal.com/wp-content/uploads/mf/shoulder_press_main.jpg?quality=86&strip=all",
+    "body":"Lacking motivation to get back into the gym? Back in the gym already but feel stagnated? Or maybe you're just looking for new inspiration for a the new year."
+    
+  },
+  {
+    "id": "3",
+    "name": "Chin up",
+    "time": 30,
+    "img": "https://d3h9ln6psucegz.cloudfront.net/wp-content/uploads/2013/10/Chin-up-to-build-big-arms.jpg",
+    "body":"Lacking motivation to get back into the gym? Back in the gym already but feel stagnated? Or maybe you're just looking for new inspiration for a the new year."
+    
+  },
+  {
+    "id": "4",
+    "name": "Lages Squate",
+    "time": 35,
+    "img": "https://www.mensjournal.com/wp-content/uploads/mf/1280-squat-barbell-james-michelfelder.jpg?w=900&h=506&crop=1&quality=86&strip=all",
+    "body":"Lacking motivation to get back into the gym? Back in the gym already but feel stagnated? Or maybe you're just looking for new inspiration for a the new year."
+    
+  },
+  {
+    "id": "5",
+    "name": "Dumbbell Curl",
+    "time": 40,
+    "img": "https://image.shutterstock.com/image-photo/handsome-power-athletic-man-training-260nw-657941434.jpg",
+    "body":"Lacking motivation to get back into the gym? Back in the gym already but feel stagnated? Or maybe you're just looking for new inspiration for a the new year."
+    
+  },
+  {
+    "id": "6",
+    "name": "Barbell Curl",
+    "time": 30,
+    "img": "https://fitnessvolt.com/wp-content/uploads/2021/03/barbell-curl-for-bigger-biceps-750x393.jpg",
+    "body":"Lacking motivation to get back into the gym? Back in the gym already but feel stagnated? Or maybe you're just looking for new inspiration for a the new year."
+    
+  }
+]
