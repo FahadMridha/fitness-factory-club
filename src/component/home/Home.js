@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import logo from '../../images/logo.png';
 import Exercise from '../exercies/Exercise';
+import Persone from '../persone/Persone';
 const Home = () => {
     const [exercises,setExercises]=useState([])
     // console.log(exercises);
@@ -17,7 +18,7 @@ const Home = () => {
                         <img src={logo} alt="./" />
                         <h1 className='text-4xl text-orange-600 ml-4 font-bold'>FITNESS FACTORY CLUB</h1>
                     </div>
-                    <h3 className='text-2xl font-semibold text-amber-500'>Select today’s exercise</h3>
+                    <h3 className='text-2xl font-semibold text-amber-500'>Select your today’s exercise</h3>
                     <div className = 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3' >
                         {
                             exercises?.map(exercise =><Exercise key={exercise.id} name={exercise}/>)
@@ -26,7 +27,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className = 'bg-gray-400 z-0' >
-                    <h1>customer Detailes</h1>
+                   <Persone/>
                 </div>
             </div>
         </div>
