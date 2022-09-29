@@ -16,7 +16,7 @@ const Home = () => {
     }
     return (
         <div>
-            <div className = 'grid grid-cols-4 gap-4' >
+            <div className = 'grid grid-cols-1 lg:grid-cols-4 gap-4' >
                 <div className = 'col-span-3'>
                     <div className = 'flex items-center ml-12 mt-14' >
                         <img src={logo} alt="./" />
@@ -31,7 +31,7 @@ const Home = () => {
                         }
                     </div>
                 </div>
-                <div className = 'bg-gray-400 z-0' >
+                <div className = 'bg-slate-400 z-0 ml-8' >
                    <Persone/>
                 </div>
             </div>
