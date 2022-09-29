@@ -5,7 +5,7 @@ import Exercise from '../exercies/Exercise';
 import Persone from '../persone/Persone';
 const Home = () => {
     const [exercises,setExercises]=useState([])
-    const [breakTime,setBreakTime]=useState([10,20,30,40])
+    const [breakTime,setBreakTime]=useState([])
     // console.log(exercises);
     useEffect(()=>{
         fetch('exercise.json')
@@ -13,10 +13,8 @@ const Home = () => {
         .then(data=>setExercises(data))
     },[])
     const handlerBreakTime=(time)=>{
-            setBreakTime(breakTime)
-            const Time=time
-            console.log(Time);
-            
+        localStorage.setItem('time',JSON.stringify(time))
+            setBreakTime(time)    
     }
     return (
         <div>

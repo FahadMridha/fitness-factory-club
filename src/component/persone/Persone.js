@@ -3,6 +3,7 @@ import img from '../../images/student-1.png'
 
 const Persone = (props) => {
     const{handlerBreakTime,breakTime,time}=props
+    const timeArray = ['10s', '20s', '30s', '40s'];
     return (
         <div>
             <div className = 'flex items-center' >
@@ -29,15 +30,15 @@ const Persone = (props) => {
                     <h1 className='text-xl font-bold mt-3'>Break Time</h1>
                 </div>
                 <div className='flex  justify-between w-max p-5 shadow-lg rounded-md ml-8'>
-                    <button onClick={()=>handlerBreakTime(breakTime[0])} className='rounded-full bg-slate-50 p-4'>10s</button>
-                    <button className='rounded-full bg-slate-50 p-4'>20s</button>
-                    <button className='rounded-full bg-slate-50 p-4'>30s</button>
-                    <button className='rounded-full bg-slate-50 p-4'>40s</button>
+                    <button onClick={()=>handlerBreakTime(timeArray[0])} className='rounded-full bg-slate-50 p-4'>10s</button>
+                    <button onClick={()=>handlerBreakTime(timeArray[1])} className='rounded-full bg-slate-50 p-4'>20s</button>
+                    <button onClick={()=>handlerBreakTime(timeArray[2])} className='rounded-full bg-slate-50 p-4'>30s</button>
+                    <button onClick={()=>handlerBreakTime(timeArray[3])} className='rounded-full bg-slate-50 p-4'>40s</button>
                 </div>
                 <h3 className='text-xl font-semibold mt-4'>Exericise Details</h3>
                 <div>
                     <h4 className='bg-slate-300 p-4 rounded-lg text-lg mx-5 mt-5'>Exericise time: 200s</h4>
-                    <h4 className='bg-slate-300 p-4 rounded-lg text-lg mx-5 my-5'>Exericise time:{time}s</h4>
+                    <h4 className='bg-slate-300 p-4 rounded-lg text-lg mx-5 my-5'>Exericise time:{breakTime}</h4>
                 </div>
                 <div className='bg-emerald-500 p-3 mx-5 rounded-lg hover:bg-emerald-300'>
                     <button>Activity Completed</button>
