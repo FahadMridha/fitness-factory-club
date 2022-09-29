@@ -3,7 +3,7 @@ import React from 'react';
 const Question = () => {
     return (
         <div className='w-full'>
-            <h2 className='text-center text-2xl border shadow-xl mt-10 p-6 w-full rounded-md  bg-slate-200'>Question Section</h2>
+            <h2 className='text-center text-2xl border shadow-xl mt-10 p-6 w-full rounded-md  bg-slate-200 font-bold text-orange-700'>Question Section</h2>
             <div  className = 'bg-slate-300 p-4 shadow-xl rounded-lg text-lg mx-5 mt-5' >
                 <h1 className='test-2xl font-bold text-left'>Qsn1.How does react work?</h1>
                 <p>

@@ -12,7 +12,7 @@ const Exercise = (props) => {
                     </figure>
                 <div className="card-body items-center text-center">
                     <h2 className="card-title">{name}</h2>
-                    <p className='text-gray-400'>{body}</p>
+                    <p className='text-gray-600'>{body}</p>
                     <p><small>Time required :{time}s</small></p>
                 <div className="card-actions">
                     <button onClick={()=>handlerAddToActivitiesTime(time)} className=" bg-emerald-500 p-3 mx-5 rounded-lg hover:bg-emerald-300 px-8">Add To List</button>

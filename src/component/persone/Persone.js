@@ -21,7 +21,7 @@ const Persone = (props) => {
         addToDb(value)
     }
     const timeArray = ['10s', '20s', '30s', '40s'];
-    const message = () => toast('Congratulation,You completed your daily activities.', {
+    const message = () => toast('Congratulation,You completed your daily physical  activities.', {
         position: "top-center",
         theme: 'dark'
     });
