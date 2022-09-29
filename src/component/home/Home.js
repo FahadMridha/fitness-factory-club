@@ -19,7 +19,7 @@ const Home = () => {
         <div>
             <div className = 'grid grid-cols-1 lg:grid-cols-4 gap-4' >
                 <div className = 'col-span-3'>
-                    <div className = 'flex items-center ml-12 mt-14' >
+                    <div className = 'flex items-center ml-10 mt-14' >
                         <img src={logo} alt="./" />
                         <h1 className='text-4xl text-orange-600 ml-4 font-bold'>FITNESS FACTORY CLUB</h1>
                     </div>
@@ -35,7 +35,7 @@ const Home = () => {
                         }
                     </div>
                 </div>
-                <div className = 'bg-slate-400 z-0 ml-8' >
+                <div className ='bg-slate-400' >
                 <Persone 
                 time={activitiesTime}
                 />

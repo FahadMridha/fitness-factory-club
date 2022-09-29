@@ -8,7 +8,7 @@ const Exercise = (props) => {
             <div>
                 <div className = "card w-full bg-slate-200 shadow-xl m-4" >
                     <figure className="px-5 py-4">
-                    <img src={img} alt="Shoes" className="rounded-xl w-full h-52" />
+                    <img src={img} alt="./" className="rounded-xl w-full h-52" />
                     </figure>
                 <div className="card-body items-center text-center">
                     <h2 className="card-title">{name}</h2>
