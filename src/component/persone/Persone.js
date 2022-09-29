@@ -25,12 +25,15 @@ const Persone = (props) => {
         }
     }
     const timeArray = ['10s', '20s', '30s', '40s'];
-    const message = () => toast('Thank You,You completed your activities.',{position:"top-center",theme:'dark'});
+    const message = () => toast('Congratulation,You completed your daily activities.', {
+        position: "top-center",
+        theme: 'dark'
+    });
     return (
         <div>
-            <div className = 'flex items-center' >
-                <img className='rounded-full h-20 w-20' src={img} alt="" />
-                <h4 className='text-2xl text-white font-semibold'>Md.Badsha Fahadh</h4>
+            <div className = 'flex items-center ' >
+                <img className='rounded-full h-14 mt-5 w-14 bg-gray-300' src={img} alt="" />
+                <h4 className='text-2xl font-semibold text-yellow-200 ml-4'>Fahadh Mridha</h4>
             </div>
             <h2 className=' text-lg font-semibold text-white'>Web Developer</h2>
             < div className = 'flex justify-between mt-12 border shadow-2xl mx-5 rounded-lg ' >
@@ -52,10 +55,10 @@ const Persone = (props) => {
                     <h1 className='text-xl font-bold mt-3'>Break Time</h1>
                 </div>
                 <div className='flex  justify-between w-max p-5 shadow-lg rounded-md ml-8'>
-                    <button onClick={()=>handlerBreakTime(timeArray[0])} className='rounded-full bg-slate-50 p-4'>10s</button>
-                    <button onClick={()=>handlerBreakTime(timeArray[1])} className='rounded-full bg-slate-50  p-4'>20s</button>
-                    <button onClick={()=>handlerBreakTime(timeArray[2])} className='rounded-full bg-slate-50 p-4'>30s</button>
-                    <button onClick={()=>handlerBreakTime(timeArray[3])} className='rounded-full bg-slate-50 p-4'>40s</button>
+                    <button onClick={()=>handlerBreakTime(timeArray[0])} className='rounded-full bg-slate-50  hover:bg-green-300 p-4'>10s</button>
+                    <button onClick={()=>handlerBreakTime(timeArray[1])} className='rounded-full bg-slate-50  hover:bg-green-300 p-4'>20s</button>
+                    <button onClick={()=>handlerBreakTime(timeArray[2])} className='rounded-full bg-slate-50 hover:bg-green-300 p-4'>30s</button>
+                    <button onClick={()=>handlerBreakTime(timeArray[3])} className='rounded-full bg-slate-50 p-4  hover:bg-green-300'>40s</button>
                 </div>
                 <h3 className='text-xl font-semibold mt-4'>Exericise Details</h3>
                 <div>

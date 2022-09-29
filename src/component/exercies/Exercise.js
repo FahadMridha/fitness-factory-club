@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Exercise = (props) => {
-    // console.log(props);
     const{exercise,handlerAddToActivitiesTime}=props
     const{name,img,body,time}=exercise
     return (

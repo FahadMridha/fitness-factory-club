@@ -1,35 +1,15 @@
-import { click } from '@testing-library/user-event/dist/click';
 import React, { useEffect, useState } from 'react';
 import logo from '../../images/logo.png';
-import { getStoredTime } from '../../utilities/fakedb';
 import Exercise from '../exercies/Exercise';
 import Persone from '../persone/Persone';
 const Home = () => {
     const [exercises,setExercises]=useState([])
     const [activitiesTime,setActivitiesTime]=useState(0)
-    // console.log(exercises);
     useEffect(()=>{
         fetch('exercise.json')
         .then(res=>res.json())
         .then(data=>setExercises(data))
     },[])
-
-
-    // useEffect(()=>{
-    //     const storedTime=getStoredTime()
-    //     const saveTime=[];
-    //     for (const id in storedTime) {
-    //         const addedProduct=times.find(product=>product.id===id)
-    //         // console.log(addedProduct);
-    //         if(addedProduct){
-    //             const quantity = storedTime[id]
-    //             addedProduct.quantity = quantity
-    //             // console.log(addedProduct);
-    //             saveTime.push(addedProduct)
-    //         }
-    //     }
-    //   setTimes()
-    // },[])
     const handlerAddToActivitiesTime=(getTime)=>{
         const newTime=activitiesTime+getTime;
         setActivitiesTime(newTime)
