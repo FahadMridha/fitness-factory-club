@@ -29,9 +29,9 @@ const Persone = (props) => {
         <div>
             <div className = 'flex items-center ' >
                 <img className='rounded-full h-14 mt-5 w-14 bg-gray-300' src={img} alt="" />
-                <h4 className='text-2xl font-semibold text-yellow-200 ml-4'>Fahadh Mridha</h4>
+                <h4 className='text-2xl font-semibold ml-4'>Fahadh Mridha</h4>
             </div>
-            <h2 className=' text-lg font-semibold text-slate-200'>Web Developer</h2>
+            <h2 className=' text-lg font-semibold '>Web Developer</h2>
             <div className = 'flex justify-between mt-8 border bg-slate-400 shadow-2xl mx-5 rounded-lg ' >
                 <div >
                     <h2  className='text-white '><span className='text-xl font-bold'>73</span> kg</h2>
