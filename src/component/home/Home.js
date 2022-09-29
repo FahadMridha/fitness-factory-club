@@ -1,18 +1,22 @@
+import { click } from '@testing-library/user-event/dist/click';
 import React, { useEffect, useState } from 'react';
 import logo from '../../images/logo.png';
 import Exercise from '../exercies/Exercise';
 import Persone from '../persone/Persone';
 const Home = () => {
     const [exercises,setExercises]=useState([])
+    const [breakTime,setBreakTime]=useState([10,20,30,40])
     // console.log(exercises);
     useEffect(()=>{
         fetch('exercise.json')
         .then(res=>res.json())
         .then(data=>setExercises(data))
     },[])
-    const handlerAddToExercises=()=>{
-
-
+    const handlerBreakTime=(time)=>{
+            setBreakTime(breakTime)
+            const Time=time
+            console.log(Time);
+            
     }
     return (
         <div>
@@ -26,13 +30,14 @@ const Home = () => {
                     <div className = 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3' >
                         {
                             exercises?.map(exercise =><Exercise key={exercise.id} exercise={exercise} 
-                            handlerAddToExercises={handlerAddToExercises}/>)
+                            />)
 
                         }
                     </div>
                 </div>
                 <div className = 'bg-slate-400 z-0 ml-8' >
-                   <Persone/>
+                <Persone 
+                handlerBreakTime={handlerBreakTime} breakTime={breakTime} />
                 </div>
             </div>
         </div>

@@ -6,7 +6,7 @@ const Exercise = (props) => {
     return (
         <div>
             <div>
-                <div className="card w-full bg-base-100 shadow-xl m-4">
+                <div div className = "card w-full bg-slate-200 shadow-xl m-4" >
                     <figure className="px-5 py-4">
                     <img src={img} alt="Shoes" className="rounded-xl w-full h-52" />
                     </figure>
@@ -15,7 +15,7 @@ const Exercise = (props) => {
                     <p className='text-gray-400'>{body}</p>
                     <p><small>Time required :{time}s</small></p>
                 <div className="card-actions">
-                    <button className="btn btn-primary px-10">Add To List</button>
+                    <button className=" bg-emerald-500 p-3 mx-5 rounded-lg hover:bg-emerald-300 px-8">Add To List</button>
                 </div>
                 </div>
             </div>
