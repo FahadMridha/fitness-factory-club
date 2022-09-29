@@ -1,16 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
  import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 import img from '../../images/student-1.png'
+import { addToDb, displayUi } from '../../utilities/fakedb';
 
 const Persone = (props) => {
-    const{handlerBreakTime,breakTime,activities}=props
-    let totalTime=0;
-    const{id,time}=activities
-    totalTime = parseFloat((totalTime + time))
-    //  for(const activitie of activities){
-    //         totalTime=totalTime+ activitie.time
-    // }
+    const{time}=props
+    const [breakTime, setBreakTime] = useState(0)
+    useEffect(()=>{
+        const data=displayUi()
+        if(data){
+            setBreakTime(data)
+        }
+        else{
+            setBreakTime(0)
+        }
+    },[])
+     const handlerBreakTime = (value) =>{
+        setBreakTime(value)
+        // addToDb(value)
+        const add = addToDb(value);
+        if (add) {
+            console.log('add');
+        }
+    }
     const timeArray = ['10s', '20s', '30s', '40s'];
     const message = () => toast('Thank You,You completed your activities.',{position:"top-center",theme:'dark'});
     return (
@@ -46,7 +59,7 @@ const Persone = (props) => {
                 </div>
                 <h3 className='text-xl font-semibold mt-4'>Exericise Details</h3>
                 <div>
-                    <h4 className='bg-slate-300 p-4 rounded-lg text-lg mx-5 mt-5'>Exericise time:{totalTime}s</h4>
+                    <h4 className='bg-slate-300 p-4 rounded-lg text-lg mx-5 mt-5'>Exericise time:{time}s</h4>
                     <h4 className='bg-slate-300 p-4 rounded-lg text-lg mx-5 my-5'>Exericise time:{breakTime}</h4>
                 </div>
                 <div className='bg-emerald-500 p-3 mx-5 rounded-lg hover:bg-emerald-300'>

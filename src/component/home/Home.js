@@ -6,8 +6,7 @@ import Exercise from '../exercies/Exercise';
 import Persone from '../persone/Persone';
 const Home = () => {
     const [exercises,setExercises]=useState([])
-    const [activities,setActivities]=useState([])
-    const [breakTime,setBreakTime]=useState([])
+    const [activitiesTime,setActivitiesTime]=useState(0)
     // console.log(exercises);
     useEffect(()=>{
         fetch('exercise.json')
@@ -31,21 +30,10 @@ const Home = () => {
     //     }
     //   setTimes()
     // },[])
-    const handlerAddToActivitiesTime=(exercies)=>{
-        // console.log(exercies);
-        setActivities(exercies)
+    const handlerAddToActivitiesTime=(getTime)=>{
+        const newTime=activitiesTime+getTime;
+        setActivitiesTime(newTime)
 
-    }
-    // console.log(activities);
-    const handlerBreakTime=(time)=>{
-        // localStorage.setItem('time',JSON.stringify(time))
-        // let getTime={}
-        // const storedTime= localStorage.getItem('time')
-        // if (storedTime) {
-        //     getTime= JSON.parse(storedTime)
-        // }
-    //    console.log(getTime);
-     setBreakTime(time)    
     }
     return (
         <div>
@@ -69,9 +57,7 @@ const Home = () => {
                 </div>
                 <div className = 'bg-slate-400 z-0 ml-8' >
                 <Persone 
-                handlerBreakTime={handlerBreakTime} 
-                breakTime={breakTime} 
-                activities={activities}
+                time={activitiesTime}
                 />
                 </div>
             </div>

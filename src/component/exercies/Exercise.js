@@ -16,7 +16,7 @@ const Exercise = (props) => {
                     <p className='text-gray-400'>{body}</p>
                     <p><small>Time required :{time}s</small></p>
                 <div className="card-actions">
-                    <button onClick={()=>handlerAddToActivitiesTime(exercise)} className=" bg-emerald-500 p-3 mx-5 rounded-lg hover:bg-emerald-300 px-8">Add To List</button>
+                    <button onClick={()=>handlerAddToActivitiesTime(time)} className=" bg-emerald-500 p-3 mx-5 rounded-lg hover:bg-emerald-300 px-8">Add To List</button>
                 </div>
                 </div>
             </div>
