@@ -14,7 +14,13 @@ const Home = () => {
     },[])
     const handlerBreakTime=(time)=>{
         localStorage.setItem('time',JSON.stringify(time))
-            setBreakTime(time)    
+        let getTime={}
+        const storedTime= localStorage.getItem('time')
+        if (storedTime) {
+            getTime= JSON.parse(storedTime)
+        }
+    //    console.log(getTime);
+     setBreakTime(getTime)    
     }
     return (
         <div>

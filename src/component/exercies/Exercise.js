@@ -6,7 +6,7 @@ const Exercise = (props) => {
     return (
         <div>
             <div>
-                <div div className = "card w-full bg-slate-200 shadow-xl m-4" >
+                <div className = "card w-full bg-slate-200 shadow-xl m-4" >
                     <figure className="px-5 py-4">
                     <img src={img} alt="Shoes" className="rounded-xl w-full h-52" />
                     </figure>
